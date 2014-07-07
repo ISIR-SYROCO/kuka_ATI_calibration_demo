@@ -1,0 +1,17 @@
+<package>
+    <description brief="Orocos kuka_ATI_calibration_demo Component package">
+        This package contains the ATI gamma force torque sensor calibration 
+    </description>
+    <!--NOTE: set the license and author before you publish this code-->
+    <license></license>
+    <author>Guillaume Hamon</author>
+    <depend package="rtt" />
+    <depend package="rtt_motion_control_msgs" />
+    <depend package="rtt_sensor_msgs" />
+    <depend package="kuka_lwr_fri" />
+    <depend package="lwr_fri" />
+    <depend package="fri_examples" />
+    <depend package="rtt_geometry_msgs" />
+</package>
+</package>
+
