@@ -17,7 +17,7 @@ KukaATICalibrationDemoRTNET::KukaATICalibrationDemoRTNET(std::string const& name
   	this->addPort("BiasOrder_o",oport_bias_order); // Ask ATISensor component to order a bias command to the sensor
 	this->addPort("addJntTorque_o",oport_add_joint_torque); // used to perform load compensation
 	this->addPort("estExtJntTrq_i",iport_est_ext_joint_torque); // gets the external force/load estimation
-	this->addOperation("setJointImpedance", &KukaJacobianDemoRTNET::setJointImpedance, this, RTT::OwnThread);
+	this->addOperation("setJointImpedance", &KukaATICalibrationDemoRTNET::setJointImpedance, this, RTT::OwnThread);
 	dT=this->getPeriod();
 
 	velocity_limit=0.2;//0.2; //T1: 250mm/s max along the end effector, arbitrary value of 0.2 rad/s at the joints
@@ -107,7 +107,7 @@ void KukaATICalibrationDemoRTNET::updateHook(){
 	if(fri_cmd_mode){
 		if(joint_state_fs == RTT::NewData){
 			if(!end_calibration){
-				if(joints_position_command == position1 && t==tf){ // first position reached, saving sensor values
+				if(joint_position_command == position1 && t==tf){ // first position reached, saving sensor values
 					iport_ATI_values.read(valeurZ);
 					oport_bias_order.write(true);
 					// changing command to position 2
@@ -115,7 +115,7 @@ void KukaATICalibrationDemoRTNET::updateHook(){
 					JState_init=JState;
 					t=0;
 					for(i=0;i<7;i++){
-						tf_min[i]=(15*std::abs(joints_position_command[i]-JState_init[i])/(8*velocity_limit));
+						tf_min[i]=(15*std::abs(joint_position_command[i]-JState_init[i])/(8*velocity_limit));
 					}
 					tf=tf_min[0];
 					for(i=1;i<7;i++){
@@ -125,14 +125,14 @@ void KukaATICalibrationDemoRTNET::updateHook(){
   					}
 
   				}else{
-					if(joints_position_command == position2 && t == tf){// second position reached, saving sensor values
+					if(joint_position_command == position2 && t == tf){// second position reached, saving sensor values
          					iport_ATI_values.read(valeurX);
 		         			// changing command to position 3
          					joint_position_command = position3;
 						JState_init=JState;
 						t=0;
 						for(i=0;i<7;i++){
-							tf_min[i]=(15*std::abs(joints_position_command[i]-JState_init[i])/(8*velocity_limit));
+							tf_min[i]=(15*std::abs(joint_position_command[i]-JState_init[i])/(8*velocity_limit));
 						}
 						tf=tf_min[0];
 						for(i=1;i<7;i++){
@@ -142,7 +142,7 @@ void KukaATICalibrationDemoRTNET::updateHook(){
   						}
 
   					}else{
-						if(joints_position_command == position3 && t==tf){// third position reached, saving sensor values
+						if(joint_position_command == position3 && t==tf){// third position reached, saving sensor values
                  					iport_ATI_values.read(valeurY);
                  					// end of calibration
 							JState_init=JState;
@@ -151,7 +151,7 @@ void KukaATICalibrationDemoRTNET::updateHook(){
 					}
   				}
   			}else{ // calibration ended
-				if(joints_position_command != position4){
+				if(joint_position_command != position4){
 				// calibration ended, send sensor measurements to ATISensor component which will process sensor's weight compensation computations
 					Eigen::MatrixXd results(3,6);
 					results.row(0)=Eigen::VectorXd::Map(&valeurZ[0],valeurZ.size());
@@ -160,11 +160,11 @@ void KukaATICalibrationDemoRTNET::updateHook(){
 					oport_calibration_results.write(results);
 
 					/*goes back to home position, verifying that Fnorm value is close to zero (active weight compensation) */
-					joints_position_command = position4;
+					joint_position_command = position4;
 					JState_init=JState;
 					t=0;
 					for(i=0;i<7;i++){
-						tf_min[i]=(15*std::abs(joints_position_command[i]-JState_init[i])/(8*velocity_limit));
+						tf_min[i]=(15*std::abs(joint_position_command[i]-JState_init[i])/(8*velocity_limit));
 					}
 					tf=tf_min[0];
 					for(i=1;i<7;i++){
@@ -185,6 +185,7 @@ void KukaATICalibrationDemoRTNET::updateHook(){
   			}
 
 			if(requiresControlMode(30)){
+				RTT::FlowStatus estExtTrq_fs=iport_est_ext_joint_torque.read(external_torque);
 				if (estExtTrq_fs==RTT::NewData){
 					for(i=0; i<7; i++ ){
          					external_torque[i]=external_torque[i];

@@ -20,6 +20,7 @@ class KukaATICalibrationDemoRTNET : public FriRTNetExampleAbstract{
     bool configureHook();
     bool doStart();
     void updateHook();
+    void setJointImpedance(std::vector<double> &stiffness, std::vector<double> &damping);
 
     std::vector<double> JState_init;//msr_joint_positions
     bool end_calibration;
@@ -36,6 +37,7 @@ class KukaATICalibrationDemoRTNET : public FriRTNetExampleAbstract{
     double tf;
     double t;
     int n;
+    float dT;
 
     std::vector<double> valeurZ;
     std::vector<double> valeurX;
