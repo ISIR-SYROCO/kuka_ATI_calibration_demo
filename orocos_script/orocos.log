@@ -1,0 +1,231 @@
+0.000 [ Info   ][Logger] No ORO_LOGLEVEL environment variable set.
+0.000 [ Info   ][Logger]  OROCOS version '2.6.0' compiled with GCC 4.6.3. Running in Xenomai.
+0.000 [ Info   ][Logger] Orocos Logging Activated at level : [ Warning] ( 4 ) 
+0.000 [ Info   ][Logger] Reference System Time is : 6091503975348948 ticks ( 1.90373e+06 seconds ).
+0.000 [ Info   ][Logger] Logging is relative to this time.
+0.000 [ Info   ][Logger] Xenomai Periodic Timer runs in preemptive 'one-shot' mode.
+0.000 [ Info   ][Logger] Installing SIGXCPU handler.
+0.000 [ Info   ][Logger] No RTT_COMPONENT_PATH set. Using default: /home/kuka/src/groovy_workspace/orocos/orocos_toolchain/install/lib/orocos
+0.000 [ Info   ][Logger] plugin 'rtt' not loaded before.
+0.000 [ Info   ][Logger] Loading plugin libraries from directory /home/kuka/src/groovy_workspace/orocos/orocos_toolchain/install/lib/orocos/xenomai/./plugins ...
+0.001 [ Info   ][Logger] Loaded RTT Service 'marshalling' from 'rtt-marshalling'
+0.001 [ Info   ][Logger] Loaded RTT Service 'scripting' from 'rtt-scripting'
+0.001 [ Info   ][Logger] typekit 'rtt' not loaded before.
+0.001 [ Info   ][Logger] Loading typekit libraries from directory /home/kuka/src/groovy_workspace/orocos/orocos_toolchain/install/lib/orocos/xenomai/./types ...
+0.012 [ Info   ][TypekitRepository::Import] Loading Transport CORBA://rtt-types.
+0.012 [ Info   ][Logger] Loaded RTT TypeKit/Transport 'rtt-corba-types' from 'rtt-transport-corba'
+0.026 [ Info   ][TypekitRepository::Import] Loading Typekit rtt-types.
+0.026 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for int
+0.026 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for uint
+0.026 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for double
+0.026 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for float
+0.026 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for char
+0.026 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for bool
+0.026 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for void
+0.026 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for ConnPolicy
+0.026 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for TaskContext
+0.026 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for string
+0.026 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for array
+0.026 [ Info   ][Logger] Loaded RTT TypeKit/Transport 'rtt-types' from 'rtt-typekit'
+0.030 [ Info   ][TypekitRepository::Import] Loading Transport mqueue://rtt-types.
+0.030 [ Info   ][TypekitRepository::Import] Registered new 'mqueue' transport for array
+0.030 [ Info   ][TypekitRepository::Import] Registered new 'mqueue' transport for bool
+0.030 [ Info   ][TypekitRepository::Import] Registered new 'mqueue' transport for char
+0.030 [ Info   ][TypekitRepository::Import] Registered new 'mqueue' transport for double
+0.030 [ Info   ][TypekitRepository::Import] Registered new 'mqueue' transport for float
+0.030 [ Info   ][TypekitRepository::Import] Registered new 'mqueue' transport for int
+0.030 [ Info   ][TypekitRepository::Import] Registered new 'mqueue' transport for uint
+0.030 [ Info   ][Logger] Loaded RTT TypeKit/Transport 'rtt-mqueue-transport' from 'rtt-transport-mqueue'
+0.030 [ Info   ][Logger] No RTT_COMPONENT_PATH set. Using default: /home/kuka/src/groovy_workspace/orocos/orocos_toolchain/install/lib/orocos
+0.030 [ Info   ][Logger] OCL factory set for real-time logging
+0.030 [ Info   ][Thread] Creating Thread for scheduler=ORO_SCHED_OTHER, priority=1, CPU affinity=0, with name='Deployer'
+0.031 [ Info   ][Deployer] Thread created with scheduler type 'ORO_SCHED_OTHER', priority 1, cpu affinity 0 and period 0 (PID= 0 ).
+0.031 [ Info   ][Thread] Creating Thread for scheduler=ORO_SCHED_OTHER, priority=1, CPU affinity=0, with name='GlobalEngine'
+0.031 [ Info   ][GlobalEngine] Thread created with scheduler type 'ORO_SCHED_OTHER', priority 1, cpu affinity 0 and period 0 (PID= 0 ).
+0.032 [ Info   ][Logger] No site file was found. Importing 'ocl' by default.
+0.042 [ Info   ][DeploymentComponent::import] Importing directory /home/kuka/src/groovy_workspace/orocos/orocos_toolchain/install/lib/orocos/xenomai/ocl ...
+0.044 [ Info   ][DeploymentComponent::import] Loaded multi component library '/home/kuka/src/groovy_workspace/orocos/orocos_toolchain/install/lib/orocos/xenomai/ocl/liborocos-ocl-reporting-xenomai.so'
+0.045 [ Info   ][DeploymentComponent::import] Loaded multi component library '/home/kuka/src/groovy_workspace/orocos/orocos_toolchain/install/lib/orocos/xenomai/ocl/liborocos-ocl-logging-xenomai.so'
+0.046 [ Info   ][DeploymentComponent::import] Loaded component type 'OCL::LuaTLSFComponent'
+0.050 [ Info   ][DeploymentComponent::import] Loaded component type 'OCL::logging::Log4cxxAppender'
+0.051 [ Info   ][DeploymentComponent::import] Loaded component type 'OCL::LuaComponent'
+0.053 [ Info   ][DeploymentComponent::import] Loaded multi component library '/home/kuka/src/groovy_workspace/orocos/orocos_toolchain/install/lib/orocos/xenomai/ocl/liborocos-ocl-timer-xenomai.so'
+0.054 [ Info   ][DeploymentComponent::import] Loaded component type 'OCL::HelloWorld'
+0.067 [ Info   ][DeploymentComponent::import] Loaded multi component library '/home/kuka/src/groovy_workspace/orocos/orocos_toolchain/install/lib/orocos/xenomai/ocl/liborocos-ocl-reporting-netcdf-xenomai.so'
+0.067 [ Info   ][DeploymentComponent::import] Loaded component type 'OCL::NetcdfReporting'
+0.069 [ Info   ][DeploymentComponent::import] Loaded multi component library '/home/kuka/src/groovy_workspace/orocos/orocos_toolchain/install/lib/orocos/xenomai/ocl/liborocos-ocl-common-xenomai.so'
+0.069 [ Info   ][DeploymentComponent::import] Loading typekit libraries from directory /home/kuka/src/groovy_workspace/orocos/orocos_toolchain/install/lib/orocos/xenomai/ocl/types ...
+0.073 [ Info   ][TypekitRepository::Import] Loading Typekit OCLTypekit.
+0.073 [ Info   ][DeploymentComponent::import] Loaded RTT TypeKit/Transport 'OCLTypekit' from 'ocl'
+0.073 [ Info   ][DeploymentComponent::import] Loading plugin libraries from directory /home/kuka/src/groovy_workspace/orocos/orocos_toolchain/install/lib/orocos/xenomai/ocl/plugins ...
+0.073 [ Info   ][DeploymentComponent::import] Loaded RTT Service 'Lua' from 'rttlua-plugin'
+0.075 [ Info   ][DeploymentComponent::import] Loaded RTT Service 'os' from 'os'
+0.076 [ Info   ][DeploymentComponent::import] Loaded RTT Service 'print' from 'print'
+0.076 [ Info   ][DeploymentComponent::import] Loaded RTT Service 'LuaTLSF' from 'rttlua-tlsf-plugin'
+0.076 [ Info   ][Logger] Loading Service or Plugin scripting in TaskContext Deployer
+0.079 [ Info   ][Logger] Found complete interface of requested service 'scripting'
+0.079 [ Info   ][Logger] Running Script kukaATICalibrationDemoRTNET.ops ...
+0.088 [ Info   ][DeploymentComponent::import] Importing directory /home/kuka/src/groovy_workspace/orocos/ATISensor/lib/orocos/xenomai ...
+0.097 [ Info   ][DeploymentComponent::import] Loaded component type 'ATISensor'
+0.098 [ Info   ][DeploymentComponent::import] Loading typekit libraries from directory /home/kuka/src/groovy_workspace/orocos/ATISensor/lib/orocos/xenomai/types ...
+0.108 [ Info   ][TypekitRepository::Import] Loading Transport Typelib:///orogen/ATISensor.
+0.119 [ Info   ][DeploymentComponent::import] Loaded RTT TypeKit/Transport '/orogen/ATISensor/TYPELIB' from 'ATISensor-transport-typelib'
+0.138 [ Info   ][TypekitRepository::Import] Loading Transport MQueue:///orogen/ATISensor.
+0.138 [ Info   ][DeploymentComponent::import] Loaded RTT TypeKit/Transport '/orogen/ATISensor/MQueue' from 'ATISensor-transport-mqueue'
+0.139 [ Info   ][TypekitRepository::Import] Loading Transport CORBA:///orogen/ATISensor.
+0.139 [ Info   ][DeploymentComponent::import] Loaded RTT TypeKit/Transport '/orogen/ATISensor/CORBA' from 'ATISensor-transport-corba'
+0.144 [ Info   ][TypekitRepository::Import] Loading Typekit /orogen/ATISensor.
+0.144 [ Info   ][TypekitRepository::Import] Registered new 'Typelib' transport for /ATISensorData
+0.144 [ Info   ][TypekitRepository::Import] Registered new 'MQueue' transport for /ATISensorData
+0.144 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for /ATISensorData
+0.144 [ Info   ][TypekitRepository::Import] Registered new 'Typelib' transport for /std/string
+0.144 [ Info   ][TypekitRepository::Import] Registered new 'MQueue' transport for /std/string
+0.144 [ Info   ][TypekitRepository::Import] Registered new 'Typelib' transport for /std/vector</double>
+0.144 [ Info   ][TypekitRepository::Import] Registered new 'MQueue' transport for /std/vector</double>
+0.144 [ Info   ][DeploymentComponent::import] Loaded RTT TypeKit/Transport '/orogen/ATISensor' from 'ATISensor-typekit'
+0.144 [ Info   ][DeploymentComponent::import] Loading plugin libraries from directory /home/kuka/src/groovy_workspace/orocos/ATISensor/lib/orocos/xenomai/plugins ...
+0.145 [ Info   ][DeploymentComponent::import] Loaded RTT Service 'myservice' from 'ATISensor-service'
+0.145 [ Info   ][DeploymentComponent::import] Loaded RTT Plugin 'ATISensor-example-plugin' from 'ATISensor-plugin'
+0.390 [ Info   ][DeploymentComponent::import] Importing directory /home/kuka/src/groovy_workspace/orocos/rtt_ros_integration/rtt_rospack/lib/orocos/xenomai ...
+0.390 [ Info   ][DeploymentComponent::import] Loading plugin libraries from directory /home/kuka/src/groovy_workspace/orocos/rtt_ros_integration/rtt_rospack/lib/orocos/xenomai/plugins ...
+0.390 [ Info   ][DeploymentComponent::import] Loaded RTT Plugin 'rospack' from 'rtt_rospack'
+0.391 [ Info   ][DeploymentComponent::import] Importing directory /home/kuka/src/groovy_workspace/orocos/rtt_ros_integration/rtt_rosnode/lib/orocos/xenomai ...
+0.391 [ Info   ][DeploymentComponent::import] Loading typekit libraries from directory /home/kuka/src/groovy_workspace/orocos/rtt_ros_integration/rtt_rosnode/lib/orocos/xenomai/types ...
+0.440 [ Info   ][TypekitRepository::Import] Loading Typekit ros-primitives.
+0.440 [ Info   ][DeploymentComponent::import] Loaded RTT TypeKit/Transport 'ros-primitives' from 'rtt-ros-primitives-typekit'
+0.440 [ Info   ][DeploymentComponent::import] Loading plugin libraries from directory /home/kuka/src/groovy_workspace/orocos/rtt_ros_integration/rtt_rosnode/lib/orocos/xenomai/plugins ...
+0.453 [ Info   ][DeploymentComponent::import] Initializing ROS node
+0.465 [ Info   ][DeploymentComponent::import] ROS node spinner started
+0.465 [ Info   ][DeploymentComponent::import] Loaded RTT Plugin 'ros_integration' from 'rtt_rosnode'
+0.467 [ Info   ][DeploymentComponent::import] Loaded RTT Service 'rosparam' from 'rtt_rosparam_service'
+0.467 [ Info   ][DeploymentComponent::import] Importing directory /home/kuka/src/groovy_workspace/orocos/rtt_ros_comm/rtt_std_msgs/lib/orocos/xenomai ...
+0.467 [ Info   ][DeploymentComponent::import] Loading typekit libraries from directory /home/kuka/src/groovy_workspace/orocos/rtt_ros_comm/rtt_std_msgs/lib/orocos/xenomai/types ...
+0.480 [ Info   ][TypekitRepository::Import] Loading Transport ros://ros-std_msgs.
+0.481 [ Info   ][DeploymentComponent::import] Loaded RTT TypeKit/Transport 'rtt-ros-std_msgs-transport' from 'rtt-std_msgs-ros-transport'
+0.578 [ Info   ][TypekitRepository::Import] Loading Typekit ros-std_msgs.
+0.578 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /std_msgs/MultiArrayDimension
+0.578 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /std_msgs/Header
+0.578 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /std_msgs/UInt32MultiArray
+0.578 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /std_msgs/ByteMultiArray
+0.578 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /std_msgs/UInt8MultiArray
+0.578 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /std_msgs/Bool
+0.578 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /std_msgs/UInt64
+0.578 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /std_msgs/ColorRGBA
+0.578 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /std_msgs/Int8MultiArray
+0.578 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /std_msgs/UInt64MultiArray
+0.578 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /std_msgs/Int64
+0.578 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /std_msgs/UInt8
+0.579 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /std_msgs/Int64MultiArray
+0.579 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /std_msgs/String
+0.579 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /std_msgs/Int32MultiArray
+0.579 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /std_msgs/Time
+0.579 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /std_msgs/Int16
+0.579 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /std_msgs/UInt16
+0.579 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /std_msgs/Char
+0.579 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /std_msgs/UInt16MultiArray
+0.579 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /std_msgs/Int32
+0.579 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /std_msgs/Duration
+0.579 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /std_msgs/Byte
+0.579 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /std_msgs/Int16MultiArray
+0.579 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /std_msgs/Float64MultiArray
+0.579 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /std_msgs/MultiArrayLayout
+0.579 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /std_msgs/Float32MultiArray
+0.579 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /std_msgs/Empty
+0.579 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /std_msgs/Float32
+0.580 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /std_msgs/Float64
+0.580 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /std_msgs/UInt32
+0.580 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /std_msgs/Int8
+0.580 [ Info   ][DeploymentComponent::import] Loaded RTT TypeKit/Transport 'ros-std_msgs' from 'rtt-std_msgs-typekit'
+0.580 [ Info   ][DeploymentComponent::import] Importing directory /home/kuka/src/groovy_workspace/orocos/rtt_ros_comm/rtt_rosgraph_msgs/lib/orocos/xenomai ...
+0.580 [ Info   ][DeploymentComponent::import] Loading typekit libraries from directory /home/kuka/src/groovy_workspace/orocos/rtt_ros_comm/rtt_rosgraph_msgs/lib/orocos/xenomai/types ...
+0.587 [ Info   ][TypekitRepository::Import] Loading Typekit ros-rosgraph_msgs.
+0.587 [ Info   ][DeploymentComponent::import] Loaded RTT TypeKit/Transport 'ros-rosgraph_msgs' from 'rtt-rosgraph_msgs-typekit'
+0.588 [ Info   ][TypekitRepository::Import] Loading Transport ros://ros-rosgraph_msgs.
+0.588 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /rosgraph_msgs/Clock
+0.588 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /rosgraph_msgs/Log
+0.588 [ Info   ][DeploymentComponent::import] Loaded RTT TypeKit/Transport 'rtt-ros-rosgraph_msgs-transport' from 'rtt-rosgraph_msgs-ros-transport'
+0.588 [ Info   ][DeploymentComponent::import] Importing directory /home/kuka/src/groovy_workspace/orocos/rtt_common_msgs/rtt_geometry_msgs/lib/orocos/xenomai ...
+0.588 [ Info   ][DeploymentComponent::import] Loading typekit libraries from directory /home/kuka/src/groovy_workspace/orocos/rtt_common_msgs/rtt_geometry_msgs/lib/orocos/xenomai/types ...
+0.661 [ Info   ][TypekitRepository::Import] Loading Typekit ros-geometry_msgs.
+0.662 [ Info   ][DeploymentComponent::import] Loaded RTT TypeKit/Transport 'ros-geometry_msgs' from 'rtt-geometry_msgs-typekit'
+0.674 [ Info   ][TypekitRepository::Import] Loading Transport ros://ros-geometry_msgs.
+0.674 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /geometry_msgs/Point
+0.674 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /geometry_msgs/Point32
+0.674 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /geometry_msgs/PointStamped
+0.674 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /geometry_msgs/Polygon
+0.674 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /geometry_msgs/PolygonStamped
+0.674 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /geometry_msgs/Pose
+0.674 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /geometry_msgs/Pose2D
+0.674 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /geometry_msgs/PoseArray
+0.674 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /geometry_msgs/PoseStamped
+0.674 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /geometry_msgs/PoseWithCovariance
+0.674 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /geometry_msgs/PoseWithCovarianceStamped
+0.674 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /geometry_msgs/Quaternion
+0.674 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /geometry_msgs/QuaternionStamped
+0.674 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /geometry_msgs/Transform
+0.674 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /geometry_msgs/TransformStamped
+0.674 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /geometry_msgs/Twist
+0.674 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /geometry_msgs/TwistStamped
+0.674 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /geometry_msgs/TwistWithCovariance
+0.674 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /geometry_msgs/TwistWithCovarianceStamped
+0.675 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /geometry_msgs/Vector3
+0.675 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /geometry_msgs/Vector3Stamped
+0.675 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /geometry_msgs/Wrench
+0.675 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /geometry_msgs/WrenchStamped
+0.675 [ Info   ][DeploymentComponent::import] Loaded RTT TypeKit/Transport 'rtt-ros-geometry_msgs-transport' from 'rtt-geometry_msgs-ros-transport'
+0.675 [ Info   ][DeploymentComponent::import] Importing directory /home/kuka/src/groovy_workspace/orocos/rtt_common_msgs/rtt_sensor_msgs/lib/orocos/xenomai ...
+0.676 [ Info   ][DeploymentComponent::import] Loading typekit libraries from directory /home/kuka/src/groovy_workspace/orocos/rtt_common_msgs/rtt_sensor_msgs/lib/orocos/xenomai/types ...
+0.687 [ Info   ][TypekitRepository::Import] Loading Transport ros://ros-sensor_msgs.
+0.687 [ Info   ][DeploymentComponent::import] Loaded RTT TypeKit/Transport 'rtt-ros-sensor_msgs-transport' from 'rtt-sensor_msgs-ros-transport'
+0.772 [ Info   ][TypekitRepository::Import] Loading Typekit ros-sensor_msgs.
+0.772 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /sensor_msgs/MagneticField
+0.772 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /sensor_msgs/Imu
+0.772 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /sensor_msgs/CameraInfo
+0.772 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /sensor_msgs/FluidPressure
+0.772 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /sensor_msgs/TimeReference
+0.773 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /sensor_msgs/Range
+0.773 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /sensor_msgs/MultiEchoLaserScan
+0.773 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /sensor_msgs/Temperature
+0.773 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /sensor_msgs/Image
+0.773 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /sensor_msgs/PointCloud
+0.773 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /sensor_msgs/JointState
+0.773 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /sensor_msgs/CompressedImage
+0.773 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /sensor_msgs/Joy
+0.773 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /sensor_msgs/RegionOfInterest
+0.773 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /sensor_msgs/LaserEcho
+0.773 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /sensor_msgs/NavSatFix
+0.773 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /sensor_msgs/JoyFeedback
+0.774 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /sensor_msgs/RelativeHumidity
+0.774 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /sensor_msgs/PointField
+0.774 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /sensor_msgs/NavSatStatus
+0.774 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /sensor_msgs/Illuminance
+0.774 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /sensor_msgs/ChannelFloat32
+0.774 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /sensor_msgs/JoyFeedbackArray
+0.774 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /sensor_msgs/LaserScan
+0.774 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /sensor_msgs/PointCloud2
+0.774 [ Info   ][DeploymentComponent::import] Loaded RTT TypeKit/Transport 'ros-sensor_msgs' from 'rtt-sensor_msgs-typekit'
+0.774 [ Info   ][DeploymentComponent::import] Importing directory /home/kuka/src/groovy_workspace/directKinematics/lib/orocos/xenomai ...
+0.782 [ Info   ][DeploymentComponent::import] Loaded component type 'DirectKinematics'
+0.783 [ Info   ][DeploymentComponent::import] Loading typekit libraries from directory /home/kuka/src/groovy_workspace/directKinematics/lib/orocos/xenomai/types ...
+0.783 [ Info   ][TypekitRepository::Import] Loading Transport CORBA:///orogen/directKinematics.
+0.783 [ Info   ][DeploymentComponent::import] Loaded RTT TypeKit/Transport '/orogen/directKinematics/CORBA' from 'directKinematics-transport-corba'
+0.783 [ Info   ][TypekitRepository::Import] Loading Transport Typelib:///orogen/directKinematics.
+0.793 [ Info   ][DeploymentComponent::import] Loaded RTT TypeKit/Transport '/orogen/directKinematics/TYPELIB' from 'directKinematics-transport-typelib'
+0.811 [ Info   ][TypekitRepository::Import] Loading Transport MQueue:///orogen/directKinematics.
+0.811 [ Info   ][DeploymentComponent::import] Loaded RTT TypeKit/Transport '/orogen/directKinematics/MQueue' from 'directKinematics-transport-mqueue'
+0.811 [ Info   ][TypekitRepository::Import] Loading Typekit /orogen/directKinematics.
+0.811 [ Info   ][DeploymentComponent::import] Loaded RTT TypeKit/Transport '/orogen/directKinematics' from 'directKinematics-typekit'
+0.811 [ Info   ][DeploymentComponent::import] Loading plugin libraries from directory /home/kuka/src/groovy_workspace/directKinematics/lib/orocos/xenomai/plugins ...
+0.812 [ Info   ][DeploymentComponent::import] Loaded RTT Plugin 'directKinematics-example-plugin' from 'directKinematics-plugin'
+0.812 [ Info   ][DeploymentComponent::import] Loaded RTT Service 'myservice' from 'directKinematics-service'
+0.813 [ Info   ][DeploymentComponent::import] Component package 'rtt_rosnode' already imported.
+0.814 [ ERROR  ][ScriptingService] kukaATICalibrationDemoRTNET.ops :Parse error at line 5: Service or Task "Deployer" has no Peer or Service KukaDemo (or Deployer was not found at all).
+0.814 [ Info   ][Thread] Creating Thread for scheduler=ORO_SCHED_OTHER, priority=1, CPU affinity=0, with name='TaskBrowser'
+0.814 [ Info   ][TaskBrowser] Thread created with scheduler type 'ORO_SCHED_OTHER', priority 1, cpu affinity 0 and period 0 (PID= 0 ).
+0.815 [ Info   ][Logger] Entering Task Deployer
+5.976 [ Info   ][Logger] Ignoring deployment shutdown function due to missing peer.
+5.976 [ Info   ][DeploymentComponent::stopComponentsGroup] Stopping group 0
+5.976 [ Info   ][DeploymentComponent::cleanupComponentsGroup] Cleaning up group 0
+5.976 [ Info   ][Logger] Unloading group 0
+5.976 [ Info   ][Logger] Kick-out of group 0 successful.
+5.977 [ Info   ][Logger] Orocos Logging Deactivated.
