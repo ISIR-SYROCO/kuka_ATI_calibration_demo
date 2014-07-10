@@ -1,12 +1,13 @@
 import("ATISensor")
 import("directKinematics")
 import("rtt_rosnode")
+import("kuka_ATI_calibration_demo")
 
 KukaDemo.friStop
 unloadComponent("KukaDemo")
 
 
-loadComponent("KukaDemo","kukaATICalibrationDemoRTNET")
+loadComponent("KukaDemo","KukaATICalibrationDemoRTNET")
 loadComponent("ATI","ATISensor")
 loadComponent("dKinematics","DirectKinematics")
 
@@ -14,7 +15,7 @@ setActivity("ATI",0.01,10,ORO_SCHED_RT)
 setActivity("KukaDemo",0.001,50,ORO_SCHED_RT)
 setActivity("dKinematics",0,30,ORO_SCHED_RT)
 
-lwr.control_mode=1
+lwr.control_mode=7
 lwr.local_port=49938
 ATI.setWebserver(0)
 
@@ -52,14 +53,14 @@ ATI.start
 
 dKinematics.start
 
-friExample.configure
+KukaDemo.configure
 
-friExample.friReset
+KukaDemo.friReset
 
 lwr.control_mode=7
 lwr.start
 
 
-#friExample.setControlStrategy(7)
+#KukaDemo.setControlStrategy(7)
 
-#friExample.start
+#KukaDemo.start

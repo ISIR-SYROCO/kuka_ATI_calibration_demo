@@ -18,7 +18,6 @@ KukaATICalibrationDemoRTNET::KukaATICalibrationDemoRTNET(std::string const& name
 	this->addPort("addJntTorque_o",oport_add_joint_torque); // used to perform load compensation
 	this->addPort("estExtJntTrq_i",iport_est_ext_joint_torque); // gets the external force/load estimation
 	this->addOperation("setJointImpedance", &KukaATICalibrationDemoRTNET::setJointImpedance, this, RTT::OwnThread);
-	dT=this->getPeriod();
 
 	velocity_limit=0.2;//0.2; //T1: 250mm/s max along the end effector, arbitrary value of 0.2 rad/s at the joints
   	end_calibration=false;
@@ -27,6 +26,8 @@ KukaATICalibrationDemoRTNET::KukaATICalibrationDemoRTNET(std::string const& name
   	valeurZ.resize(6); // Fx,Fy,Fz,Tx,Ty,Tz
   	valeurX.resize(6);
   	valeurY.resize(6);
+	JState_init.resize(LWRDOF);
+	JState.resize(LWRDOF);
   	tf_min.resize(LWRDOF);
   	position1.resize(LWRDOF);
   	position2.resize(LWRDOF);
@@ -43,7 +44,6 @@ bool KukaATICalibrationDemoRTNET::doStart(){
 	std::vector<double> stiff(LWRDOF, 250.0);
 	std::vector<double> damp(LWRDOF, 0.1);
 	setJointImpedance(stiff, damp);
-
  	RTT::FlowStatus joint_state_fs=iport_msr_joint_pos.read(JState_init);
 	for(i=0;i<7;i++){
   		tf_min[i]=(15*std::abs(joint_position_command[i]-JState[i])/(8*velocity_limit));
@@ -61,7 +61,6 @@ bool KukaATICalibrationDemoRTNET::doStart(){
 		}
 		oport_add_joint_torque.write(external_torque);
 	}
-
      	friStart();
      	return true;
 }
@@ -88,6 +87,7 @@ bool KukaATICalibrationDemoRTNET::configureHook(){
         	fri_to_krl.intData[i]=0;
         	fri_to_krl.realData[i]=0.0;
    	}
+	dT=this->getPeriod();
     	return true;
 }
 
